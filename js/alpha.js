@@ -55,6 +55,11 @@ function continueGame(){
 function playNow(){
     setHideElement('firstSection');
     setUnHideElement('playSection');
+
+
+    // reset life 
+    
+
     continueGame();
 }
 
@@ -66,4 +71,6 @@ function gameOver(){
 function playAgain(){
     setUnHideElement('playSection');
     setHideElement('resultSection');
+    setElementById('currentLife', 5);
+    setElementById('currentScore', 0);
 }

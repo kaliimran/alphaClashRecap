@@ -17,7 +17,10 @@ function removeBackgroundColor (elementsId){
 }
 
 
-
+function setElementById(elementsId, value){
+    const element = document.getElementById(elementsId);
+    element.innerText = value;
+}
 
 
 
