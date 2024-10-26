@@ -1,13 +1,15 @@
 
 function handleKeyboard(events){
     const playerPress = events.key;
+    if(playerPress === 'Escape'){
+        gameOver()
+    }
 
     const currentAlphabetElement = document.getElementById('currentAlphabet');
     const currentAlphabet = currentAlphabetElement.innerText;
     const expectedAlphabet = currentAlphabet.toLowerCase();
 
     if(playerPress === expectedAlphabet){
-        console.log('You got it');
 
         const currentScoreElement = document.getElementById('currentScore');
         const currentScoreText = currentScoreElement.innerText;
@@ -66,6 +68,10 @@ function playNow(){
 function gameOver(){
     setHideElement('playSection');
     setUnHideElement('resultSection');
+
+    const scoreElement = document.getElementById('currentScore');
+    const score = scoreElement.innerText;
+    setElementById('gameScore', score)
 }
 
 function playAgain(){
