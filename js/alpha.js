@@ -40,7 +40,7 @@ function handleKeyboard(events){
 }
 
 
-document.addEventListener('keyup', handleKeyboard)
+document.addEventListener('keyup', handleKeyboard);
 
 
 
@@ -59,7 +59,6 @@ function playNow(){
     setUnHideElement('playSection');
 
 
-    // reset life 
     
 
     continueGame();
