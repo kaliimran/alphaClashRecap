@@ -42,10 +42,6 @@ document.addEventListener('keyup', handleKeyboard)
 
 
 
-
-
-
-
 function continueGame(){
     const alphabet = randomAlphabet();
 
@@ -54,12 +50,6 @@ function continueGame(){
 
     addBackgroundColor(alphabet);
 }
-
-
-
-
-
-
 
 
 function playNow(){
